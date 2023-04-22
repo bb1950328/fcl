@@ -366,7 +366,7 @@ if (NOT TARGET uninstall)
   add_custom_target(uninstall
           "${CMAKE_COMMAND}" -P "${CMAKE_CURRENT_BINARY_DIR}/CMakeModules/cmake_uninstall.cmake")
 else ()
-  message(WARNING "uninstall target for FCL is not added because there already was an uninstall target")
+  message(STATUS "uninstall target for FCL is not added because there already was an uninstall target")
 endif ()
 
 set(FCL_BUILD_TESTS "DEFAULT" CACHE INTERNAL "Deprecated; use BUILD_TESTING instead.")
